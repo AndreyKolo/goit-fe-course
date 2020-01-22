@@ -29,6 +29,12 @@ img {
   padding-bottom: 102px;
 }
 
+.site-nav {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
 .site-nav li {
   display: inline-block;  
 }
