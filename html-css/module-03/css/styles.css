@@ -12,47 +12,46 @@ body {
   font-family: "Playfair Display", sans-serif;
 }
 
+.wrapper {
+  width: 900px;
+  margin: 0 auto;
+}
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-.wrapper {
-  width: 900px;
-  margin: 0 auto;
-}
-
 /* site-nav */
-.site-nav {
-  display: inline-block;
-  margin: 0;
-  padding:0;
-  font-size: 14px;
-  line-height: 24px;
-  color: #626262;
-  font-weight: 400;
-  text-transform: uppercase;
-  list-style: none;
+.main-header {
+  padding-top: 76px;
+  padding-bottom: 102px;
 }
 
 .site-nav li {
-  display: inline-block;
-  margin-top: 76px;
-  margin-bottom: 102px;
+  display: inline-block;  
 }
 
 .site-nav li:not(:last-child) {
   margin-right: 100px;
 }
 
-.site-nav-item-1 {
-  margin-left: 166px;
-  color: #03a9f4;
+.site-nav a {
+  display: block;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0;
+  padding:0;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
 }
 
-.site-nav a {
-  text-decoration: none;
+.site-nav a:hover {
+  color: #03a9f4;
 }
 
 /* main-content */
@@ -67,14 +66,23 @@ img {
   display: inline-block;
   width: 420px;
   margin-right: 60px;
+  margin-bottom: 136px;
 }
 
 .content-li:nth-child(2n) {
   margin-right: 0;
 }
 
+.content-li:nth-last-child(-n+2) {
+margin-bottom: 54px;
+}
+
+.main-content-img {
+  margin-bottom: 30px;
+}
+
 .main-content-p {
-  margin-top: 30px;
+  margin-top: 0;
   margin-bottom: 22px;
   font-size: 14px;
   line-height: 17px;
@@ -93,27 +101,21 @@ img {
 
 .main-content-text {
   margin-top: 0;
-  margin-bottom: 130px;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 400;
-}
-
-.main-content-text-1 {
-  margin-top: 0;
   margin-bottom: 0;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
 }
 
-.main-button {
+section {
+  padding-bottom: 70px;
+}
+
+  .main-button {
   display: block;
   padding: 0;
   border: 1px solid black;
   background: rgb(255, 255, 255);
-  margin-top: 52px;
-  margin-bottom: 70px;
   margin-left: 358px;
   margin-right: 378px;
   width: 164px;
@@ -122,6 +124,10 @@ img {
   font-size: 20px;
   line-height: 24px;
   font-weight: 400;
+}
+
+.main-button:hover {
+  color: #03a9f4;
 }
 
 .visually-hidden:not(:focus):not(:active),
