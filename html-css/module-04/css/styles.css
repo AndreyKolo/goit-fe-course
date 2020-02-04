@@ -1,0 +1,241 @@
+html {
+    box-sizing: border-box;
+}
+
+*, 
+*::before, 
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "OpenSans", "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #555252;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+  .wrapper {
+    width: 1110px;
+    margin: 0 auto;
+  }
+
+  /*Header*/
+  .page-header {
+      padding-top: 42px;
+      margin-bottom: 102px;
+  }
+  
+  .site-logo {
+      float: left;
+}
+
+  .nav-list {
+      float: right;
+      margin: 0;
+      margin-top: 6px;
+      padding: 0;
+      width: 475px;
+      list-style: none;
+      line-height: 11px;
+      font-weight: 700;
+  }
+
+  .nav-item {
+      float: left;   
+  }
+
+  .nav-item:not(:last-child) {
+      margin-right: 30px;
+  }
+
+  .nav-item a{
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #0f0101;
+  }
+
+  .nav-item a:hover, 
+  .nav-item a:focus {
+      color: #1abc9c;
+  }
+
+  /*Section Products*/
+.section-products {
+    margin-bottom: 96px;
+}
+
+  .products-title {
+      font-family: "Roboto", sans-serif;
+      font-size: 48px;
+      line-height: 32px;
+      font-weight: 900;
+      color: #515151;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 0 0 92px 0;
+}
+
+  .products-title::after {
+      display: block;
+      content: '';
+      width: 180px;
+      height: 8px;
+      background-color: #1abc9c;
+      margin: 24px auto 0;
+}
+
+.products-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.products-list-item {
+    float: left;
+}
+
+.products-list-item:not(:nth-child(4n)) {
+    margin-right: 30px;
+}
+
+.products-list-item:nth-child(-n+4) {
+    margin-bottom: 30px;
+}
+
+.products-list-item p {
+    margin: 0;
+    padding: 0;
+    padding-left: 14px;
+    font-size: 18px;
+    line-height: 32px;
+    text-transform: uppercase;
+    font-family: "Robot", sans-serif;
+    font-weight: 900;
+    color: #ffffff;
+    width: 255px;
+    background-color: rgb(50, 50, 50);
+    cursor: pointer;
+    
+}
+
+.products-list-item p:hover, 
+.products-list-item p:focus {
+    background-color: rgb(26, 188, 156);
+}
+
+.products-list-item span {
+    float: right;
+    padding: 0 10px;
+    background-color: rgb(140, 140, 140);
+}
+
+.products-list-item span:hover,
+.products-list-item span:focus {
+    background-color: rgb(127, 217, 199);
+} 
+
+/*Section News*/
+.section-news {
+    margin-bottom: 80px;
+}
+
+.news-title {
+    font-family: "Roboto", sans-serif;
+      font-size: 48px;
+      line-height: 32px;
+      font-weight: 900;
+      color: #555252;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 0 0 80px 0;
+}
+
+.news-title::after {
+    display: block;
+    content: '';
+    width: 172px;
+    height: 8px;
+    margin: 24px auto 0;
+    background-color: #4ec6ab;
+}
+  
+.news-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.news-list-item {
+    float: left;
+    width: 350px;
+}
+
+.news-list-item:nth-child(-n+2) {
+    margin-right:30px;
+}
+
+.news-list-item h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.news-list-item h3::after {
+    display: block;
+    content: '';
+    width: 136px;
+    height: 3px;
+    background-color: #4ec6ab;
+    margin: 10px 0 26px 0;
+}
+
+.news-list-item p {
+    margin: 0 0 12px 0;
+}
+
+.news-list-item button {
+    border: 0;
+    padding: 14px 38px 10px 40px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #ffffff;
+    background-color: rgb(78, 198, 171);
+    border-radius: 3px;
+    cursor: pointer;
+}
+  
+
+  
+  
+  .visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
