@@ -40,14 +40,15 @@ img {
   }
   
   .site-logo {
+      display: block;
       float: left;
 }
 
   .nav-list {
       float: right;
       margin: 0;
-      margin-top: 6px;
       padding: 0;
+      padding-top: 6px;
       width: 475px;
       list-style: none;
       line-height: 11px;
@@ -55,6 +56,7 @@ img {
   }
 
   .nav-item {
+      display: block;
       float: left;   
   }
 
@@ -105,6 +107,7 @@ img {
 }
 
 .products-list-item {
+    display: block;
     float: left;
 }
 
@@ -116,37 +119,50 @@ img {
     margin-bottom: 30px;
 }
 
-.products-list-item p {
+.products-list-item a {
+    display: block;
+}
+
+.products-list-item h3 {
     margin: 0;
-    padding: 0;
-    padding-left: 14px;
-    font-size: 18px;
-    line-height: 32px;
-    text-transform: uppercase;
+    float: left;
+    width: 200px;
+    height: 40px;
     font-family: "Robot", sans-serif;
     font-weight: 900;
+    font-size: 18px;
+    line-height: 32px;
     color: #ffffff;
-    width: 255px;
-    background-color: rgb(50, 50, 50);
-    cursor: pointer;
-    
+    background-color: #323232;
+    text-transform: uppercase;
+    padding-left: 12px;
+    padding-top: 4px;
+}
+
+.products-list-item p {
+    margin: 0;
+    float: left;
+    width: 55px;
+    height: 40px;
+    font-family: "Robot", sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 32px;
+    color: #ffffff;
+    background-color: #8c8c8c;
+    text-align: center;
+    padding-top: 4px;
+}
+
+.products-list-item h3:hover, 
+.products-list-item h3:focus {
+    background-color: #1abc9c;
 }
 
 .products-list-item p:hover, 
 .products-list-item p:focus {
-    background-color: rgb(26, 188, 156);
+    background-color: #7fd9c7;
 }
-
-.products-list-item span {
-    float: right;
-    padding: 0 10px;
-    background-color: rgb(140, 140, 140);
-}
-
-.products-list-item span:hover,
-.products-list-item span:focus {
-    background-color: rgb(127, 217, 199);
-} 
 
 /*Section News*/
 .section-news {
@@ -208,17 +224,28 @@ img {
     margin: 0 0 12px 0;
 }
 
-.news-list-item button {
+.news-list-item a {
+    display: inline-block;
+    text-decoration: none;
     border: 0;
     padding: 14px 38px 10px 40px;
     font-size: 16px;
+    line-height: 26px;
     font-weight: 300;
     color: #ffffff;
     background-color: rgb(78, 198, 171);
     border-radius: 3px;
-    cursor: pointer;
 }
-  
+
+.news-list-item a:hover, 
+.news-list-item a:focus {
+    background-color: rgb(78, 198, 171);
+}
+
+
+
+
+
 
   
   
