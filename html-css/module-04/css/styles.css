@@ -125,10 +125,6 @@ img {
     display: block;
 }
 
-.products-list-item a:hover {
-    background-color: #1abc9c;  
-}
-
 .products-list-title {
     margin: 0;
     float: left;
@@ -160,13 +156,13 @@ img {
     padding-top: 4px;
 }
 
-.products-list-title:hover, 
-.products-list-title:focus {
+.products-list-item a:hover products-list-title, 
+.products-list-item a:focus products-list-title {
     background-color: #1abc9c;
 }
 
-.products-list-text:hover, 
-.products-list-text:focus {
+.products-list-item a:hover products-list-text, 
+.products-list-item a:focus products-list-text {
     background-color: #7fd9c7;
 }
 
