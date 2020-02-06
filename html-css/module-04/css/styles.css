@@ -38,9 +38,12 @@ img {
       padding-top: 42px;
       margin-bottom: 102px;
   }
+
+  .page-nav a {
+      display: block;
+  }
   
   .site-logo {
-      display: block;
       float: left;
 }
 
@@ -56,7 +59,6 @@ img {
   }
 
   .nav-item {
-      display: block;
       float: left;   
   }
 
@@ -76,8 +78,8 @@ img {
   }
 
   /*Section Products*/
-.section-products {
-    margin-bottom: 96px;
+.section {
+    padding-bottom: 94px;
 }
 
   .products-title {
@@ -123,7 +125,11 @@ img {
     display: block;
 }
 
-.products-list-item h3 {
+.products-list-item a:hover {
+    background-color: #1abc9c;  
+}
+
+.products-list-title {
     margin: 0;
     float: left;
     width: 200px;
@@ -139,7 +145,7 @@ img {
     padding-top: 4px;
 }
 
-.products-list-item p {
+.products-list-text {
     margin: 0;
     float: left;
     width: 55px;
@@ -154,21 +160,17 @@ img {
     padding-top: 4px;
 }
 
-.products-list-item h3:hover, 
-.products-list-item h3:focus {
+.products-list-title:hover, 
+.products-list-title:focus {
     background-color: #1abc9c;
 }
 
-.products-list-item p:hover, 
-.products-list-item p:focus {
+.products-list-text:hover, 
+.products-list-text:focus {
     background-color: #7fd9c7;
 }
 
 /*Section News*/
-.section-news {
-    margin-bottom: 80px;
-}
-
 .news-title {
     font-family: "Roboto", sans-serif;
       font-size: 48px;
