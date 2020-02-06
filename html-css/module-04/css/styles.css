@@ -156,13 +156,13 @@ img {
     padding-top: 4px;
 }
 
-.products-list-item a:hover products-list-title, 
-.products-list-item a:focus products-list-title {
+.products-list-item a:hover h3, 
+.products-list-item a:hover h3 {
     background-color: #1abc9c;
 }
 
-.products-list-item a:hover products-list-text, 
-.products-list-item a:focus products-list-text {
+.products-list-item a:hover p, 
+.products-list-item a:hover p {
     background-color: #7fd9c7;
 }
 
