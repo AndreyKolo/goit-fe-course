@@ -5,6 +5,8 @@ html {
 *, 
 *::before, 
 *::after {
+  margin: 0;
+  padding: 0;
     box-sizing: inherit;
 }
 
@@ -137,7 +139,7 @@ img {
 .slider-image {
   height: 600px;
   width: 100%;
-  object-fit: cover;
+  
 }
 
 .slides-item {
@@ -227,6 +229,10 @@ img {
   margin-right: 30px;
 }
 
+.caption-product {
+  position: relative;
+}
+
 .caption-head {
   background-color: rgb(50, 50, 50);
 }
@@ -241,8 +247,8 @@ img {
 
 .overlay {
   position: absolute;
-  width: 255px;
-  height: 322px;
+  width: 100%;
+  height: 100%;
   border: 10px solid rgba(255, 255, 255, .3);
   background-color: rgba(0, 0, 0, .5);
   opacity: 0;
@@ -318,8 +324,7 @@ img {
 .overlay-list-item {
   float: left;
 }
-
-
+  
 .overlay-list-item:not(:nth-last-child(-n + 2)) {
   margin-right: 9px;
 }
@@ -385,12 +390,10 @@ img {
 .footer-link {
   display: inline-block;
   text-decoration: none;
-  color: rgb(254, 254, 254);
-}
-
-.footer-link:hover {
   color: #419989;
 }
+
+
 
 
 
