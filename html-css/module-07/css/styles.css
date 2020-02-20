@@ -293,25 +293,25 @@ a {
   margin-bottom: 30px;
 }
 
-.contact-form-input:required:focus:valid, 
+/* .contact-form-input:required:focus:valid, 
 .contact-form-textarea:required:focus:valid {
   border: 2px solid green;
-}
-/* .contact-form-input:required:focus:valid:not(:placeholder-shown),
-.contact-form-textarea:required:focus:valid:not(:placeholder-shown) {
-  border: 1px solid green;
 } */
+.contact-form-input:required:focus:valid:not(:placeholder-shown),
+.contact-form-textarea:required:focus:valid:not(:placeholder-shown) {
+  border: 2px solid green;
+}
 
 
-.contact-form-input:required:focus:invalid,
+/* .contact-form-input:required:focus:invalid,
 .contact-form-textarea:required:focus:invalid {
   border: 2px solid red;
-}
-
-/* .contact-form-input:required:focus:invalid:not(:placeholder-shown),
-.contact-form-textarea:required:focus:invalid:not(:placeholder-shown) {
-  border: 1px solid red;
 } */
+
+.contact-form-input:required:focus:invalid:not(:placeholder-shown),
+.contact-form-textarea:required:focus:invalid:not(:placeholder-shown) {
+  border: 2px solid red;
+}
 
 
 
