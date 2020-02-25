@@ -1,0 +1,113 @@
+.text-head {
+  width: 930px;
+  margin: 0 auto;
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #999999;
+  text-align: center;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px;
+
+  &__item {
+    width: 380px;
+    position: relative;
+    text-align: center;
+
+    &:hover .overlay-box__img {
+      transform: translate(-10px, -10px);
+    }
+
+    &:hover .overlay {
+      transform: translate(-10px, -10px);
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__name {
+    margin-bottom: 12px;
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: $secondary-color;
+    text-transform: uppercase;
+  }
+
+  &__pos {
+    font-family: $secondary-font;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 24px;
+    color: #999999;
+  }
+}
+
+.overlay-box {
+  position: relative;
+  margin-bottom: 30px;
+
+  &__img {
+    transition: all 500ms linear;
+  }
+}
+
+.overlay {
+  margin-bottom: 40px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    0deg,
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(243, 129, 129, 0.9) 100%
+  );
+  box-shadow: 10px 10px 0 0 rgb(149, 225, 211);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 500ms linear;
+  z-index: 1;
+
+  &__list {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+
+  &__item {
+    display: inline-block;
+
+    &:hover .overlay__link {
+      background-color: rgb(243, 129, 129);
+    }
+
+    &:hover .overlay__svg {
+      fill: rgb(255, 255, 255);
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    background-color: rgb(252, 227, 138);
+  }
+
+  &__svg {
+    fill: rgb(243, 129, 129);
+    width: 25px;
+    height: 25px;
+    transition: fill 200ms linear;
+  }
+}

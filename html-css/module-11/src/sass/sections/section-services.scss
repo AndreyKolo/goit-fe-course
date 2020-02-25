@@ -1,0 +1,130 @@
+.section-services {
+  padding-top: 52px;
+  padding-bottom: 100px;
+}
+
+.title-head {
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: $secondary-color;
+  text-align: center;
+
+  &__title-span {
+    font-family: 'Kaushan Script';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    color: $secondary-color;
+    display: block;
+    text-transform: none;
+    margin-bottom: 18px;
+  }
+
+  &::after {
+    display: block;
+    content: '';
+    margin: 43px auto 66px;
+    background-color: rgb(243, 129, 129);
+    width: 60px;
+    height: 3px;
+  }
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__item {
+    width: 382px;
+    position: relative;
+    padding-left: 82px;
+
+    &-title {
+      font-family: $main-font;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.2;
+      color: $secondary-color;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    &-text {
+      font-family: $secondary-font;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: #999999;
+    }
+
+    &:not(:nth-last-child(-n + 3)) {
+      margin-bottom: 98px;
+    }
+
+    &::before {
+      display: block;
+      content: '';
+      width: 32px;
+      height: 31px;
+      position: absolute;
+      top: 0;
+      left: 20px;
+    }
+
+    &_alarm::before {
+      background-image: url('../images/icon_01_alarm.svg');
+    }
+
+    &_line_graph::before {
+      background-image: url('../images/icon_02_line_graph.svg');
+    }
+
+    &_computer::before {
+      background-image: url('../images/icon_03_computer.svg');
+    }
+
+    &_book::before {
+      background-image: url('../images/icon_04_book.svg');
+    }
+
+    &_home::before {
+      background-image: url('../images/icon_05_home.svg');
+    }
+
+    &_image::before {
+      background-image: url('../images/icon_06_image.svg');
+    }
+  }
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .services-list {
+    .services-list__item_alarm::before {
+      background-image: url('../images/icon_01_alarm@2x.svg');
+    }
+
+    .services-list__item_line_graph::before {
+      background-image: url('../images/icon_02_line_graph@2x.svg');
+    }
+
+    .services-list__item_computer::before {
+      background-image: url('../images/icon_03_computer@2x.svg');
+    }
+
+    .services-list__item_book::before {
+      background-image: url('../images/icon_04_book@2x.svg');
+    }
+
+    .services-list__item_home::before {
+      background-image: url('../images/icon_05_home@2x.svg');
+    }
+
+    .services-list__item_image::before {
+      background-image: url('../images/icon_06_image@2x.svg');
+    }
+  }
+}

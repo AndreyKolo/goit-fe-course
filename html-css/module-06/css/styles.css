@@ -233,6 +233,7 @@ a {
 
 .overlay-box {
   position: relative;
+  margin-bottom: 30px;
 }
 
 .overlay {
